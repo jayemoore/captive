@@ -42,11 +42,11 @@ const Drawer: React.FC<DrawerProps> = ({
   }, [isOpen]);
   
 
-  const handleEscapeKeyPress = (event: KeyboardEvent) => {
-    if (event.key === "Escape") {
-      onClose();
-    }
-  };
+  // const handleEscapeKeyPress = (event: KeyboardEvent) => {
+  //   if (event.key === "Escape") {
+  //     onClose();
+  //   }
+  // };
 
   const handleOverlayClick = (event: React.MouseEvent<HTMLDivElement>) => {
     if (event.target === event.currentTarget) {
@@ -76,7 +76,7 @@ const Drawer: React.FC<DrawerProps> = ({
         <Button
           // variant="gray"
           className="absolute flex justify-start mt-10 border-none py-0"
-          onClick={onClose}
+          // onClick={onClose}
         >
           <Image src={crossSvg} alt="closeIcon" />
         </Button>
