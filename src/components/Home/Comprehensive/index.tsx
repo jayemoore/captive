@@ -4,13 +4,13 @@ import Image from "next/image";
 import Text from "@/components/ui/Text";
 
 import bg from "@/public/images/home/comprihensive.png";
-// import shadow from "@/public/images/home/comprihensive-shadow.png";
+import shadow from "@/public/images/home/comprihensive-shadow.png";
 import frame from "@/public/images/home/compriFrame 56.png";
 import bgcircle from "@/public/images/home/comprihensiveUntitled design.png";
 import check from "@/public/images/home/icons_check-fill.png";
 const Comprehensive = () => {
   return (
-    <div className="relative pt-36 min-h-[708px] bg-[#018f91]">
+    <div className="relative mt-36 min-h-[708px] bg-[#018f91] overflow-hidden">
       <Image
         className=" object-cover w-full h-full z-0 max-h-[708px]"
         src={bg}
@@ -18,14 +18,14 @@ const Comprehensive = () => {
         width={1270}
         height={804}
       />
-      {/* <Image
-        className=" absolute object-cover w-full h-full top-[250px] z-0"
+      <Image
+        className=" absolute object-cover w-full tab:h-full tab:top-0 top-[200px] z-0"
         src={shadow}
         alt=""
         width={1440}
         height={1151}
-      /> */}
-      <div className="w-full max-w-[1340px] flex tab:flex-wrap gap-[20px] items-center  mx-auto relative z-20 px-5  py-32">
+      />
+      <div className="w-full max-w-[1340px] flex tab:flex-wrap gap-[20px] items-center  mx-auto relative z-20 px-5  py-32 mob:pt-10 mob:pb-24">
         <div className="flex-col w-full max-w-[578px]">
           <Text as="h2" className="text-white">
             Comprehensive Benefits Package
