@@ -8,7 +8,7 @@ interface Props {
   children: React.ReactNode;
   className?: string;
   as?: ComponentAs;
-  onClick?: any;
+  onClick?: React.MouseEventHandler<HTMLHeadingElement>; 
 }
 
 const Text = forwardRef<HTMLHeadingElement | HTMLParagraphElement, Props>(
@@ -20,7 +20,7 @@ const Text = forwardRef<HTMLHeadingElement | HTMLParagraphElement, Props>(
         <h1
           ref={ref}
           className={cn(
-            "font-sora text-[60px] font-bold leading-[96px]",
+            "font-inter text-[64px]  font-extrabold leading-[76.8px] text-white mob:text-[40px] mob:leading-[50px]",
             className,
           )}
           onClick={onClick}
@@ -35,7 +35,7 @@ const Text = forwardRef<HTMLHeadingElement | HTMLParagraphElement, Props>(
         <h2
           ref={ref}
           className={cn(
-            "font-sora text-[28px] font-semibold leading-[36px]",
+            "font-inter text-[48px] mob:text-[40px] font-extrabold leading-[52.8px] text-[#002A2B]",
             className,
           )}
           onClick={onClick}
@@ -48,7 +48,7 @@ const Text = forwardRef<HTMLHeadingElement | HTMLParagraphElement, Props>(
     return (
       <p
         ref={ref}
-        className={cn("font-sora text-[16px] font-normal leading-6", className)}
+        className={cn("font-inter text-[16px] font-normal leading-[22.4px] text-[#22282F]", className)}
         onClick={onClick}
       >
         {children}
