@@ -10,7 +10,7 @@ import logo from "@/public/CIS_logo 2.png";
 import Image from "next/image";
 import { cn } from "@/lib/utils";
 
-import togglesvg from "@/public/icons/togglesvg.svg"
+import togglesvg from "@/public/icons/togglesvg.svg";
 import Text from "../ui/Text";
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -41,144 +41,135 @@ const Navbar = () => {
     }
   }, [isOpen]);
 
- 
   return (
-      <nav className="relative min-h-[134px] mob:min-h-max z-50  w-full px-5 bg-white">
-         <div className=" max-w-[1270px]  min-h-[130px] mob:min-h-max w-full flex flex-wrap items-center justify-between mx-auto py-4">
-            <div className="flex justify-between items-center w-full ">
-              <Link
-                href="/"
-                className="flex mob:max-w-[182px] mob:justify-start space-x-3 rtl:space-x-reverse"
+    <nav className="relative min-h-[134px] mob:min-h-max z-50  w-full px-5 bg-white">
+      <div className=" max-w-[1270px]  min-h-[130px] mob:min-h-max w-full flex flex-wrap items-center justify-between mx-auto py-4">
+        <div className="flex justify-between items-center w-full ">
+          <Link
+            href="/"
+            className="flex mob:max-w-[182px] mob:justify-start space-x-3 rtl:space-x-reverse"
+          >
+            <Image
+              src={logo}
+              alt="Flowbite Logo"
+              width={229}
+              height={109}
+              className="w-[71%] "
+            />
+          </Link>
+          <div className="flex xl:pr-4 xl:hidden  pt-4">
+            <button
+              // onClick={toggleMenu}
+              type="button"
+              className="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden  focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 bg-gray-700 dark:ring-gray-600"
+              aria-controls="navbar-default"
+              aria-expanded={isOpen ? "true" : "false"}
+            >
+              <span className="sr-only">Open main menu</span>
+              <Image src={togglesvg} alt="" width={64} height={64} />
+            </button>
+          </div>
+
+          {/* tab and mob  menu*/}
+          <div className="block mob:pr-0 ">
+            <div
+              className="relative cursor-pointer flex pr-2 mob:pr-0 pt-[5px]"
+              onClick={onOpen}
+            >
+              <button
+                // onClick={toggleMenu}
+                type="button"
+                className="inline-flex items-center p-2 w-[64px] h-[64px] justify-center text-sm  bg-transparent text-white rounded-lg  "
+                aria-controls="navbar-default"
+                aria-expanded={isOpen ? "true" : "false"}
               >
-                <Image
-                  src={logo}
-                  alt="Flowbite Logo"
-                  width={229}
-                  height={109}
-                  className="w-[71%] "
-                />
-              </Link>
-              <div className="flex xl:pr-4 xl:hidden  pt-4">
-                <button
-                  // onClick={toggleMenu}
-                  type="button"
-                  className="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden  focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 bg-gray-700 dark:ring-gray-600"
-                  aria-controls="navbar-default"
-                  aria-expanded={isOpen ? "true" : "false"}
-                >
-                  <span className="sr-only">Open main menu</span>
-               <Image src={togglesvg} alt="" width={64} height={64} />
-                </button>
+                <span className="sr-only">Open main menu</span>
+                <Image src={togglesvg} alt="" width={64} height={64} />
+              </button>
+            </div>
+            <div className="relative z-40">
+              <Drawer isOpen={isOpen} onClose={onClose}>
+                <div className="flex items-center h-full w-full ">
+                  <ul className="font-normal  w-full  mob:left-0 mob:w-full z-50 flex flex-col py-4 md:p-0 mt-4 gap-[0px]  rtl:space-x-reverse md:mt-0 ">
+                    <a
+                      href=""
+                      className="block  text-[20px] font-inter font-medium leading-[25.5px] text-[#22282F]  "
+                    >
+                      <Text className="flex pl-16 font-bold justify-start py-[15px] list-items">
+                        Home
+                      </Text>
+                    </a>
+                    <a
+                      href="/about"
+                      className="block  text-[20px] font-inter font-medium leading-[25.5px] text-[#22282F]  "
+                    >
+                      <Text className="flex pl-16 font-bold justify-start py-[15px] list-items">
+                        About Us
+                      </Text>
+                    </a>
+                    <a
+                      href="/services"
+                      className="block  text-[20px] font-inter font-medium leading-[25.5px] text-[#22282F]  "
+                    >
+                      <Text className="flex pl-16 font-bold justify-start py-[15px] list-items">
+                        Capabilities
+                      </Text>
+                    </a>
+                    <a
+                      href=""
+                      className="block  text-[20px] font-inter font-medium leading-[25.5px] text-[#22282F]  "
+                    >
+                      <Text className="flex pl-16 font-bold justify-start py-[15px] list-items">
+                        Contacts
+                      </Text>
+                    </a>
+                    <a
+                      href=""
+                      className="block  text-[20px] font-inter font-medium leading-[25.5px] text-[#22282F]  "
+                    >
+                      <Text className="flex pl-16 font-bold justify-start py-[15px] list-items">
+                        Join
+                      </Text>
+                    </a>
+                    <a
+                      href=""
+                      className="block  text-[20px] font-inter font-medium leading-[25.5px] text-[#22282F]  "
+                    >
+                      <Text className="flex pl-16 font-bold justify-start py-[15px] list-items">
+                        Connect
+                      </Text>
+                    </a>
 
-              </div>
-
-              {/* tab and mob  menu*/}
-              <div className="block mob:pr-0 ">
-                <div
-                  className="relative cursor-pointer flex pr-2 mob:pr-0 pt-[5px]"
-                  onClick={onOpen}
-                >
-                  <button
-                    // onClick={toggleMenu}
-                    type="button"
-                    className="inline-flex items-center p-2 w-[64px] h-[64px] justify-center text-sm  bg-transparent text-white rounded-lg  "
-                    aria-controls="navbar-default"
-                    aria-expanded={isOpen ? "true" : "false"}
-                  >
-                    <span className="sr-only">Open main menu</span>
-                    <Image src={togglesvg} alt="" width={64} height={64} />
-
-                  </button>
-                </div>
-                <div className="relative z-40">
-                  <Drawer isOpen={isOpen} onClose={onClose}>
-                    <div className="flex items-center h-full w-full ">
-                      <ul className="font-normal  w-full  mob:left-0 mob:w-full z-50 flex flex-col py-4 md:p-0 mt-4 gap-[0px]  rtl:space-x-reverse md:mt-0 ">
-                      
-                     
-
-                    
-
-
-                        <a
-                          href=""
-                          className="block  text-[20px] font-inter font-medium leading-[25.5px] text-[#22282F]  "
-                        >
-                          <Text className="flex pl-16 font-bold justify-start py-[15px] list-items">
-                          Home
-                          </Text>
-                        </a>
-                        <a
-                          href=""
-                          className="block  text-[20px] font-inter font-medium leading-[25.5px] text-[#22282F]  "
-                        >
-                          <Text className="flex pl-16 font-bold justify-start py-[15px] list-items">
-                          About Us
-                          </Text>
-                        </a>
-                        <a
-                          href=""
-                          className="block  text-[20px] font-inter font-medium leading-[25.5px] text-[#22282F]  "
-                        >
-                          <Text className="flex pl-16 font-bold justify-start py-[15px] list-items">
-                          Capabilities
-                          </Text>
-                        </a>
-                        <a
-                          href=""
-                          className="block  text-[20px] font-inter font-medium leading-[25.5px] text-[#22282F]  "
-                        >
-                          <Text className="flex pl-16 font-bold justify-start py-[15px] list-items">
-                          Contacts
-                          </Text>
-                        </a>
-                        <a
-                          href=""
-                          className="block  text-[20px] font-inter font-medium leading-[25.5px] text-[#22282F]  "
-                        >
-                          <Text className="flex pl-16 font-bold justify-start py-[15px] list-items">
-                          Join
-                          </Text>
-                        </a>
-                        <a
-                          href=""
-                          className="block  text-[20px] font-inter font-medium leading-[25.5px] text-[#22282F]  "
-                        >
-                          <Text className="flex pl-16 font-bold justify-start py-[15px] list-items">
-                          Connect
-                          </Text>
-                        </a>
-                       
-                        <div
-                          className={cn(
-                            "pt-1 pb-4 flex items-center flex-col h-full justify-center",
-                            BooknowToggle ? "flex" : "hidden"
-                          )}
-                        >
-                          <div className="w-full h-[1px] bg-[#C0C0C0] mb-3"></div>
-                          <a
-                            href="http://pcols.com/!NDI2"
-                            className="text-white text-[14px] font-medium font-inter"
-                            onClick={(e) => e.stopPropagation()}
-                          >
-                            Waldorf
-                          </a>
-                          <a
-                            href="http://pcols.com/!Nzgx"
-                            className="text-white mt-2 text-[14px] font-medium font-inter"
-                            onClick={(e) => e.stopPropagation()}
-                          >
-                            Takoma Park
-                          </a>
-                        </div>
-                      </ul>
+                    <div
+                      className={cn(
+                        "pt-1 pb-4 flex items-center flex-col h-full justify-center",
+                        BooknowToggle ? "flex" : "hidden"
+                      )}
+                    >
+                      <div className="w-full h-[1px] bg-[#C0C0C0] mb-3"></div>
+                      <a
+                        href="http://pcols.com/!NDI2"
+                        className="text-white text-[14px] font-medium font-inter"
+                        onClick={(e) => e.stopPropagation()}
+                      >
+                        Waldorf
+                      </a>
+                      <a
+                        href="http://pcols.com/!Nzgx"
+                        className="text-white mt-2 text-[14px] font-medium font-inter"
+                        onClick={(e) => e.stopPropagation()}
+                      >
+                        Takoma Park
+                      </a>
                     </div>
-                  </Drawer>
+                  </ul>
                 </div>
-              </div>
+              </Drawer>
             </div>
           </div>
-      </nav>
+        </div>
+      </div>
+    </nav>
   );
 };
 
