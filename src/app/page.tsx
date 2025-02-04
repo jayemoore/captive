@@ -4,18 +4,16 @@ import OurMission from "@/components/Home/OurMission";
 import Working from "@/components/Home/Working";
 import OurServices from "@/components/Home/OurServices";
 import Careers from "@/components/Home/Careers";
-import Navbar from "@/components/Navbar";
 
 export default function Home() {
   return (
     <div className="">
-      <Navbar/>
       <Hero />
-      <OurMission/>
-      <Working/>
-      <Comprehensive/>
-      <OurServices/>
-      <Careers/>
+      <OurMission />
+      <Working />
+      <Comprehensive />
+      <OurServices />
+      <Careers />
     </div>
   );
 }
