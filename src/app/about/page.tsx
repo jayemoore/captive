@@ -4,7 +4,9 @@ import Vision from "@/components/About/Vision";
 import Leadership from "@/components/About/Leadership";
 import AtCix from "@/components/About/AtCis";
 
-export default function Home() {
+
+export default function About() {
+
   return (
     <div className="">
       <AboutHero />
