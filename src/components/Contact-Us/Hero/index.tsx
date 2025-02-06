@@ -2,7 +2,6 @@ import React from "react";
 import Image from "next/image";
 
 import bg from "@/public/images/contactus/herobg.png";
-import bgShadow from "@/public/images/home/bg-shadow.png";
 import Text from "@/components/ui/Text";
 const ContactHero = () => {
   return (
