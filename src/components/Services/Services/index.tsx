@@ -174,7 +174,7 @@ const Services = () => {
           </div>
 
           {/* content  */}
-          <div className="w-full flex items-center justify-center mob:hidden bg-[#FFFFFF] box-shadow-services py-[45] px-[45] mt-[52px] rounded-[12px] mb-[70px]">
+          <div className="w-full flex items-center justify-center mob:hidden bg-[#FFFFFF] box-shadow-services py-[45px] pr-[45px] mt-[52px] rounded-[12px] mb-[70px]">
             <Image
               src={
                 selectedIndex !== null
