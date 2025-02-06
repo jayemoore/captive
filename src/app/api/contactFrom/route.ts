@@ -10,14 +10,14 @@ export async function POST(request: NextRequest) {
       port: 587,
       secure: false,
       auth: {
-        user: process.env.Email_User,
-        pass: process.env.Email_Password,
+        user: "developer@innovativemojo.com",
+        pass: "uqcy avif eqfa gcbd",
       },
     });
     // ${process.env.Email_Captive}
     const mailoptionsToAdmin = {
       from: email,
-      to: `${process.env.Email_User}, `,
+      to: `developer@innovativemojo.com `,
       subject: "Captive Response",
       text: `Following is the new message:
       Name: ${firstName} ${lastName}
@@ -27,7 +27,7 @@ export async function POST(request: NextRequest) {
     };
 
     const mailoptionsToUser = {
-      from: process.env.Email_Captive,
+      from: "developer@innovativemojo.com",
       to: email,
       subject: "Thank You for reaching us!",
       html: `
