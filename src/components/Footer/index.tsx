@@ -1,6 +1,5 @@
 import React from "react";
 import Image from "next/image";
-
 import Text from "../ui/Text";
 
 import logo from "@/public/CIS_logo 2.png";
