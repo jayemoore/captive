@@ -6,6 +6,7 @@ import logo from "@/public/CIS_logo 2.png";
 import twitter from "@/public/icons/twitter.svg";
 import insta from "@/public/icons/insta.svg";
 import fb from "@/public/icons/fb.svg";
+
 const Footer = () => {
   return (
     <>
@@ -57,9 +58,7 @@ const Footer = () => {
 
             <div className="">
               <Text>
-                HQ – 608 ½ Parkside place NE Washington D.C. 20019 <br />
-                California Office- 1150 S. Olive Street, 19th Floor, Los
-                Angeles, CA 90015
+                12410 Milestone Center Drive, Suite 600, German Town, MD
               </Text>
             </div>
           </div>

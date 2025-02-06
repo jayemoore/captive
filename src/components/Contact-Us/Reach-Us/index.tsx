@@ -1,9 +1,11 @@
+"use client";
+
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 
 import Text from "@/components/ui/Text";
-import Button from "@/components/ui/Button";
+import ContactForm from "./Form";
 
 import map from "@/public/images/contactus/map.png";
 import location from "@/public/images/contactus/location.svg";
@@ -37,7 +39,7 @@ const ReachUs = () => {
               <div className="flex items-center gap-[16px]">
                 <Image src={location} alt="Location" />
                 <Text className="text-[#1B1D21]">
-                  +12345 Lorem ipusm st., Alebander, AR 72002
+                  12410 Milestone Center Drive, Suite 600, German Town, MD
                 </Text>
               </div>
               <div className="flex items-center gap-[16px] mt-5">
@@ -56,7 +58,7 @@ const ReachUs = () => {
                 >
                   <Image src={mail} alt="Mail" />
                   <Text className="text-[#1B1D21]">
-                    info@captive8integratedservices
+                    info@captiv8integratedeservices.com
                   </Text>
                 </a>
               </div>
@@ -84,39 +86,7 @@ const ReachUs = () => {
                 <Text className="mt-1 text-[#FFFFFF] mb-[18px]">
                   Please fill out the contact form below.
                 </Text>
-                <form action="" className="">
-                  <input
-                    type="text"
-                    className="w-full max-w-[465px] px-[22px] py-3 form-input-shadow rounded-[4px] focus:outline-none"
-                    placeholder="First Name"
-                    required
-                  />
-                  <input
-                    type="text"
-                    className="w-full max-w-[465px] px-[22px] py-3 mt-[17px] form-input-shadow rounded-[4px] focus:outline-none"
-                    placeholder="Last Name"
-                    required
-                  />
-                  <input
-                    type="email"
-                    className="w-full max-w-[465px] px-[22px] py-3 mt-[17px] form-input-shadow rounded-[4px] focus:outline-none"
-                    placeholder="Email Address"
-                    required
-                  />
-                  <input
-                    type="text"
-                    className="w-full max-w-[465px] px-[22px] py-3 mt-[17px] form-input-shadow rounded-[4px] focus:outline-none"
-                    placeholder="Phone Number"
-                    required
-                  />
-                  <textarea
-                    className="w-full max-w-[465px] px-[22px] h-[106px] py-3 mt-[17px] form-input-shadow rounded-[4px] focus:outline-none"
-                    placeholder="Message"
-                  />
-                  <Button className="w-full max-w-[465px] rounded-[44px] text-white mt-[18px]">
-                    SUBMIT
-                  </Button>
-                </form>
+                <ContactForm />
               </div>
             </div>
           </div>

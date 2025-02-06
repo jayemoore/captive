@@ -25,15 +25,21 @@ const Working = () => {
         </Text>
       </div>
       <div className="max-w-[1270px] mx-auto relative flex flex-wrap justify-center gap-[44px] pt-8 pb-20">
-
-
-        <Image className="absolute object-cover w-full  z-0 top-[-60px]" src={map} alt="" width={1270} height={804} />
+        <Image
+          className="absolute object-cover w-full  z-0 top-[-60px]"
+          src={map}
+          alt=""
+          width={1270}
+          height={804}
+        />
         <div className="w-full max-w-[278px]  h-[373px] shadow-[0px_4px_54px_#668FA54D] px-[21px] pt-[50px] relative z-20 bg-white">
           <div className="flex justify-center">
             <Image src={respect} alt="" width={64} height={64} />
           </div>
 
-          <Text className="text-center my-[15px]">Respect and Inclusion</Text>
+          <Text className="text-center my-[15px] font-bold">
+            Respect and Inclusion
+          </Text>
           <Text className="text-center">
             Experts in designing secure, high-performing, resilient, and
             efficient infrastructure on AWS.
@@ -45,7 +51,9 @@ const Working = () => {
             <Image src={growth} alt="" width={64} height={64} />
           </div>
 
-          <Text className="text-center my-[15px]">Continuous Growth</Text>
+          <Text className="text-center my-[15px] font-bold">
+            Continuous Growth
+          </Text>
           <Text className="text-center">
             We believe in empowering our employees to achieve their personal and
             professional goals. Whether through training programs, mentorship,
@@ -58,7 +66,9 @@ const Working = () => {
             <Image src={respect} alt="" width={64} height={64} />
           </div>
 
-          <Text className="text-center my-[15px]">Wellness and Balance</Text>
+          <Text className="text-center my-[15px] font-bold">
+            Wellness and Balance
+          </Text>
           <Text className="text-center">
             We understand the importance of balancing work and life. From
             flexible work arrangements to wellness programs, we support your
@@ -71,7 +81,7 @@ const Working = () => {
             <Image src={respect} alt="" width={64} height={64} />
           </div>
 
-          <Text className="text-center my-[15px]">
+          <Text className="text-center my-[15px] font-bold">
             Collaboration and Innovation
           </Text>
           <Text className="text-center">
