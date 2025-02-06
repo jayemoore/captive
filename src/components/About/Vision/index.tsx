@@ -7,8 +7,8 @@ import bg from "@/public/images/about/vision.png";
 
 const Vision = () => {
   return (
-    <div className="w-full h-full flex justify-center items-center">
-      <div className="w-full h-full max-w-[1350px]">
+    <div className="w-full h-full flex justify-center items-center px-5">
+      <div className="w-full h-full max-w-[1250px]">
         <div className="relative flex justify-center items-center mob:flex-col mob:gap-5">
           <Image
             className="absolute mob:relative h-full min-h-[861px] mob:min-h-full bg-center w-[1350px] mob:w-full z-0"
@@ -56,29 +56,6 @@ const Vision = () => {
           </div>
         </div>
       </div>
-      {/* <div className="relative flex items-center px-5 justify-center">
-        <Image
-          className=" absolute object-cover min-h-[861px] bg-center h-full w-[1250px] mob:w-full  z-0"
-          src={bg}
-          alt="bg"
-          width={1250}
-          height={861}
-        />
-
-        <div className="relative z-20 w-full max-w-[1270px]">
-          <div className="w-full max-w-[697px]">o
-            <Text as="h1" className="mt-[14px] mb-[20px]">
-              About Us
-            </Text>
-            <Text className="text-[#D9D9D9]">
-              Captiv8 Integrated Services, LLC (CIS) is a certified Small
-              Business by the Small Business Administration (SBA) dedicated to
-              delivering cutting-edge solutions that empower organizations to
-              optimize their operations.
-            </Text>
-          </div>
-        </div>
-      </div> */}
     </div>
   );
 };

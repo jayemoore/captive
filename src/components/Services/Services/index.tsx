@@ -88,7 +88,7 @@ const Services = () => {
         "At Captiv8 Integrated Services, LLC (CIS), we provide cutting-edge telecommunications solutions that ensure seamless connectivity, reliable communication, and enhanced collaboration for your organization. Whether you are upgrading existing systems or implementing new technologies, our expert team delivers solutions that support your business goals while adapting to the ever-changing telecommunications landscape.\n\n At CIS, we understand that reliable communication is the backbone of modern businesses. Our solutions are designed to enhance connectivity, streamline communication processes, and support collaboration in real-time. Whether it’s connecting remote teams, improving data sharing, or upgrading legacy systems, we bring expertise and innovative solutions to meet your telecommunications needs. Partner with CIS for end-to-end telecommunications services that keep your organization connected, competitive, and ready for the future.",
     },
     {
-      title: "Artificial Intelligence (AI)",
+      title: "AI",
       image: aicard,
       description:
         "At Captiv8 Integrated Services, LLC (CIS), we leverage the power of Artificial Intelligence (AI) to drive innovation, optimize operations, and unlock new opportunities for growth. Our AI solutions are tailored to address your unique business challenges, enabling you to make data-driven decisions, automate processes, and enhance customer experiences with intelligent technology.\n\n At CIS, we believe in the transformative potential of AI. Our expert team combines cutting-edge technologies with industry best practices to deliver AI solutions that deliver measurable business value. Whether you’re looking to automate processes, improve decision-making, or unlock new capabilities, we help you harness the power of AI to stay ahead of the competition. \n Partner with CIS to explore innovative AI-driven solutions that accelerate growth, streamline operations, and position your organization for the future.",
@@ -139,7 +139,7 @@ const Services = () => {
                             : content[0].image
                         }
                         alt="Image"
-                        className="w-full h-full "
+                        className="w-full h-full box-shadow-services "
                       />
                       <Text
                         as="h1"
@@ -174,7 +174,7 @@ const Services = () => {
           </div>
 
           {/* content  */}
-          <div className="w-full flex items-center justify-center mob:hidden bg-[#FFFFFF] box-shadow-services py-[45px] pr-[45px] mt-[52px] rounded-[12px] mb-[70px]">
+          <div className="w-full flex items-center gap-[47px] justify-center mob:hidden bg-[#FFFFFF] box-shadow-services py-[45px] px-[40px] mt-[52px] rounded-[12px] mb-[70px]">
             <Image
               src={
                 selectedIndex !== null
@@ -182,7 +182,7 @@ const Services = () => {
                   : content[0].image
               }
               alt="Image"
-              className="w-full h-full max-w-[580px] min-h-[455px]"
+              className="w-full h-full max-w-[580px] min-h-[455px] box-shadow-services "
             />
             <div>
               <Text
