@@ -23,7 +23,7 @@ const ReachUs = () => {
         data-aos-delay="200"
       >
         <div className="flex flex-col flex-wrap justify-center tab:gap-8 items-center">
-          <div className="w-full flex items-center justify-between mob:flex-col mob:gap-10 bg-[#FFFFFF] box-shadow-services py-[24] px-[40] mob:px-5 rounded-[12px]">
+          <div className="w-full flex items-center justify-between mob:flex-col mob:gap-10 bg-[#FFFFFF] box-shadow-services py-[24px] px-[39px] mob:px-5 rounded-[12px]">
             <div>
               <Text className="text-[54px] mob:text-[40px] font-bold leading-[62px] mb-[29px] mob:mb-4">
                 Reach us at
