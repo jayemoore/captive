@@ -6,6 +6,7 @@ import logo from "@/public/CIS_logo 2.png";
 import twitter from "@/public/icons/twitter.svg";
 import insta from "@/public/icons/insta.svg";
 import fb from "@/public/icons/fb.svg";
+
 const Footer = () => {
   return (
     <>
