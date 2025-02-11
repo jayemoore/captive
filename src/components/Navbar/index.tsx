@@ -5,9 +5,8 @@ import { gsap } from "gsap";
 
 import Drawer from "../ui/Drawer";
 
-import logo from "@/public/CIS_logo 2.png";
+import logo from "@/public/logo.svg";
 import Image from "next/image";
-import { cn } from "@/lib/utils";
 
 import togglesvg from "@/public/icons/togglesvg.svg";
 import Text from "../ui/Text";
@@ -16,7 +15,7 @@ const Navbar = () => {
 
   // console.log(currentPathname);
 
-  const [BooknowToggle] = useState(false);
+  // const [BooknowToggle] = useState(false);
   const onClose = () => setIsOpen(false);
   const onOpen = () => setIsOpen(true);
 
@@ -41,7 +40,7 @@ const Navbar = () => {
   }, [isOpen]);
 
   return (
-    <nav className="relative min-h-[134px] mob:min-h-max z-50  w-full px-5 bg-white">
+    <nav className="relative min-h-[134px] mob:min-h-max z-50  w-full px-5 bg-[#124c5400]">
       <div className=" max-w-[1270px]  min-h-[130px] mob:min-h-max w-full flex flex-wrap items-center justify-between mx-auto py-4">
         <div className="flex justify-between items-center w-full ">
           <Link
@@ -53,7 +52,7 @@ const Navbar = () => {
               alt="Flowbite Logo"
               width={229}
               height={109}
-              className="w-[71%] "
+              className="w-[229px] h-[109px] "
               data-aos="fade-down"
               data-aos-duration="900"
               data-aos-easing="ease-in-sine"
@@ -98,96 +97,55 @@ const Navbar = () => {
             <div className="relative z-40">
               <Drawer isOpen={isOpen} onClose={onClose}>
                 <div className="flex items-center h-full w-full ">
-                  <ul className="font-normal  w-full  mob:left-0 mob:w-full z-50 flex flex-col py-4 md:p-0 mt-4 gap-[0px]  rtl:space-x-reverse md:mt-0 ">
+                  <ul className="font-normal  w-full mob:justify-center mob:items-center  mob:left-0 mob:w-full z-50 flex flex-col py-4 md:p-0 mt-4 gap-[0px]  rtl:space-x-reverse md:mt-0 ">
                     <Link
                       href="/"
-                      className="block  text-[20px] font-inter font-medium leading-[25.5px] text-[#22282F]  "
+                      className="block  text-[20px] font-inter font-medium leading-[25.5px]"
                       onClick={() => {
                         setIsOpen(false);
                       }}
                     >
-                      <Text className="flex pl-16 font-bold justify-start py-[15px] list-items">
+                      <Text className="flex pl-16 mob:pl-0 font-bold justify-start py-[15px] list-items text-white">
                         Home
                       </Text>
                     </Link>
+                    <div className="w-full border-[#FFFFFF]/60 border"></div>
                     <Link
                       href="/about"
-                      className="block  text-[20px] font-inter font-medium leading-[25.5px] text-[#22282F]  "
+                      className="block  text-[20px] font-inter font-medium leading-[25.5px]"
                       onClick={() => {
                         setIsOpen(false);
                       }}
                     >
-                      <Text className="flex pl-16 font-bold justify-start py-[15px] list-items">
+                      <Text className="flex pl-16 mob:pl-0 font-bold justify-start py-[15px] list-items text-white">
                         About Us
                       </Text>
                     </Link>
+                    <div className="w-full border-[#FFFFFF]/60 border"></div>
                     <Link
                       href="/services"
-                      className="block  text-[20px] font-inter font-medium leading-[25.5px] text-[#22282F]  "
+                      className="block  text-[20px] font-inter font-medium leading-[25.5px]"
                       onClick={() => {
                         setIsOpen(false);
                       }}
                     >
-                      <Text className="flex pl-16 font-bold justify-start py-[15px] list-items">
-                        Capabilities
+                      <Text className="flex pl-16 mob:pl-0 font-bold justify-start py-[15px] list-items text-white">
+                        Services
                       </Text>
                     </Link>
+                    <div className="w-full border-[#FFFFFF]/60 border"></div>
                     <Link
                       href="/contact-us"
-                      className="block  text-[20px] font-inter font-medium leading-[25.5px] text-[#22282F]  "
+                      className="block  text-[20px] font-inter font-medium leading-[25.5px]"
                       onClick={() => {
                         setIsOpen(false);
                       }}
                     >
-                      <Text className="flex pl-16 font-bold justify-start py-[15px] list-items">
-                        Contacts
+                      <Text className="flex pl-16 mob:pl-0 font-bold justify-start py-[15px] list-items text-white">
+                        Contact Us
                       </Text>
                     </Link>
-                    <Link
-                      href=""
-                      className="block  text-[20px] font-inter font-medium leading-[25.5px] text-[#22282F]  "
-                      onClick={() => {
-                        setIsOpen(false);
-                      }}
-                    >
-                      <Text className="flex pl-16 font-bold justify-start py-[15px] list-items">
-                        Join
-                      </Text>
-                    </Link>
-                    <Link
-                      href=""
-                      className="block  text-[20px] font-inter font-medium leading-[25.5px] text-[#22282F]  "
-                      onClick={() => {
-                        setIsOpen(false);
-                      }}
-                    >
-                      <Text className="flex pl-16 font-bold justify-start py-[15px] list-items">
-                        Connect
-                      </Text>
-                    </Link>
-
-                    <div
-                      className={cn(
-                        "pt-1 pb-4 flex items-center flex-col h-full justify-center",
-                        BooknowToggle ? "flex" : "hidden"
-                      )}
-                    >
-                      <div className="w-full h-[1px] bg-[#C0C0C0] mb-3"></div>
-                      <a
-                        href="http://pcols.com/!NDI2"
-                        className="text-white text-[14px] font-medium font-inter"
-                        onClick={(e) => e.stopPropagation()}
-                      >
-                        Waldorf
-                      </a>
-                      <a
-                        href="http://pcols.com/!Nzgx"
-                        className="text-white mt-2 text-[14px] font-medium font-inter"
-                        onClick={(e) => e.stopPropagation()}
-                      >
-                        Takoma Park
-                      </a>
-                    </div>
+                    <div className="w-full border-[#FFFFFF]/60 border"></div>
                   </ul>
                 </div>
               </Drawer>
