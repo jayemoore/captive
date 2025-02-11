@@ -102,20 +102,22 @@ const Services = () => {
   ];
 
   return (
-    <div className="flex justify-center my-20 mob:my-10">
-      <div
-        className="w-full max-w-[1251px] mob:px-5"
-        data-aos="fade-up"
-        data-aos-delay="200"
-      >
+    <div className="flex justify-center my-20 mob:my-5 overflow-hidden">
+      <div className="w-full max-w-[1251px] mob:px-5">
         <div className="flex flex-col flex-wrap justify-center tab:gap-8 mt-6 items-center">
           <div className="w-full max-w-[1350px] rounded-[4px] p-[20px] mob:p-0 flex flex-wrap items-center justify-center mob:justify-start">
             {buttons.map((label, index) => (
-              <div key={index} className="">
+              <div
+                key={index}
+                className=""
+                data-aos="fade-up"
+                data-aos-duration="900"
+                data-aos-easing="ease-in-sine"
+              >
                 <button
                   onClick={() => setSelectedIndex(index)}
-                  className={`w-full rounded-[4px] h-[57px] px-5 max-w-[397px] text-[16px] mob:text-[15px] text-[#22282F] font-bold font-inter flex justify-start items-center mb-6 mob:mb-2 text-start
-            ${selectedIndex === index ? "bg-[#008F9130]/20" : " "}
+                  className={`w-full rounded-[4px] h-[57px] mob:mb-2 px-5 max-w-[397px] text-[16px] mob:text-[15px] text-[#22282F] font-bold font-inter flex justify-start items-center mb-6 text-start
+            ${selectedIndex === index ? "bg-[#008F9130]/20 mob:mb-6" : " "}
           `}
                 >
                   {
@@ -129,9 +131,9 @@ const Services = () => {
                 </button>
 
                 {/* Conditionally render content below the button in mobile view */}
-                <div className="mob:block hidden">
+                <div className="mob:block hidden bg-[#FFFFFF] box-shadow-services rounded-[12px] ">
                   {selectedIndex === index && (
-                    <div className="mt-2 p-4 mb-4 rounded-[4px] bg-[#2A323A] ">
+                    <div className="mt-2 p-4 mb-4 rounded-[4px] ">
                       <Image
                         src={
                           selectedIndex !== null
@@ -143,11 +145,11 @@ const Services = () => {
                       />
                       <Text
                         as="h1"
-                        className="mob:text-[25px] mob:leading-[33px] text-center font-bold mob:text-white"
+                        className="mob:text-[25px] mob:leading-[33px] text-center font-bold text-black mob:mt-4"
                       >
                         {content[index].title}
                       </Text>
-                      <Text className="mt-2 text-center mob:text-white mob:text-left">
+                      <Text className="mt-2 text-center mob:text-black mob:text-left ">
                         {selectedIndex !== null
                           ? content[selectedIndex].description
                               .split("\n")
@@ -183,8 +185,15 @@ const Services = () => {
               }
               alt="Image"
               className="w-full h-full max-w-[580px] min-h-[455px] box-shadow-services "
+              data-aos="fade-down"
+              data-aos-duration="900"
+              data-aos-easing="ease-in-sine"
             />
-            <div>
+            <div
+              data-aos="fade-down"
+              data-aos-duration="900"
+              data-aos-easing="ease-in-sine"
+            >
               <Text
                 as="h1"
                 className="text-[48px] text-[#002A2B] mob:text-[30px] mob:leading-[40px] mob:text-center leading-[59.4px]"

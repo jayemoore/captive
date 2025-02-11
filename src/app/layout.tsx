@@ -3,6 +3,7 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import Footer from "@/components/Footer";
 import Navbar from "@/components/Navbar";
+import AosProvider from "./providers/Aos";
 
 const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
 
@@ -20,9 +21,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={` ${inter.variable}   `}>
-        <Navbar />
-        {children}
-        <Footer />
+        <AosProvider>
+          <Navbar />
+          {children}
+          <Footer />
+        </AosProvider>
       </body>
     </html>
   );

@@ -55,11 +55,17 @@ const Navbar = () => {
               width={229}
               height={109}
               className="w-[71%] "
+              data-aos="fade-down"
+              data-aos-duration="900"
+              data-aos-easing="ease-in-sine"
             />
           </Link>
           <div className="flex xl:pr-4 xl:hidden  pt-4">
             <button
               // onClick={toggleMenu}
+              data-aos="fade-down"
+              data-aos-duration="900"
+              data-aos-easing="ease-in-sine"
               type="button"
               className="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden  focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 bg-gray-700 dark:ring-gray-600"
               aria-controls="navbar-default"
@@ -78,6 +84,9 @@ const Navbar = () => {
             >
               <button
                 // onClick={toggleMenu}
+                data-aos="fade-down"
+                data-aos-duration="900"
+                data-aos-easing="ease-in-sine"
                 type="button"
                 className="inline-flex items-center p-2 w-[64px] h-[64px] justify-center text-sm  bg-transparent text-white rounded-lg  "
                 aria-controls="navbar-default"
@@ -91,56 +100,72 @@ const Navbar = () => {
               <Drawer isOpen={isOpen} onClose={onClose}>
                 <div className="flex items-center h-full w-full ">
                   <ul className="font-normal  w-full  mob:left-0 mob:w-full z-50 flex flex-col py-4 md:p-0 mt-4 gap-[0px]  rtl:space-x-reverse md:mt-0 ">
-                    <a
-                      href=""
+                    <Link
+                      href="/"
                       className="block  text-[20px] font-inter font-medium leading-[25.5px] text-[#22282F]  "
+                      onClick={() => {
+                        setIsOpen(false);
+                      }}
                     >
                       <Text className="flex pl-16 font-bold justify-start py-[15px] list-items">
                         Home
                       </Text>
-                    </a>
-                    <a
+                    </Link>
+                    <Link
                       href="/about"
                       className="block  text-[20px] font-inter font-medium leading-[25.5px] text-[#22282F]  "
+                      onClick={() => {
+                        setIsOpen(false);
+                      }}
                     >
                       <Text className="flex pl-16 font-bold justify-start py-[15px] list-items">
                         About Us
                       </Text>
-                    </a>
-                    <a
-
+                    </Link>
+                    <Link
                       href="/services"
-
                       className="block  text-[20px] font-inter font-medium leading-[25.5px] text-[#22282F]  "
+                      onClick={() => {
+                        setIsOpen(false);
+                      }}
                     >
                       <Text className="flex pl-16 font-bold justify-start py-[15px] list-items">
                         Capabilities
                       </Text>
-                    </a>
-                    <a
+                    </Link>
+                    <Link
                       href="/contact-us"
                       className="block  text-[20px] font-inter font-medium leading-[25.5px] text-[#22282F]  "
+                      onClick={() => {
+                        setIsOpen(false);
+                      }}
                     >
                       <Text className="flex pl-16 font-bold justify-start py-[15px] list-items">
                         Contacts
                       </Text>
-                    </a>
-                    <a
+                    </Link>
+                    <Link
                       href=""
                       className="block  text-[20px] font-inter font-medium leading-[25.5px] text-[#22282F]  "
+                      onClick={() => {
+                        setIsOpen(false);
+                      }}
                     >
                       <Text className="flex pl-16 font-bold justify-start py-[15px] list-items">
                         Join
                       </Text>
-                    </a>
-                    <a
+                    </Link>
+                    <Link
                       href=""
                       className="block  text-[20px] font-inter font-medium leading-[25.5px] text-[#22282F]  "
+                      onClick={() => {
+                        setIsOpen(false);
+                      }}
                     >
                       <Text className="flex pl-16 font-bold justify-start py-[15px] list-items">
                         Connect
                       </Text>
-                    </a>
+                    </Link>
 
                     <div
                       className={cn(

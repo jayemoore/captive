@@ -7,7 +7,7 @@ import bg from "@/public/images/about/atcisbg.png";
 
 const WeGuide = () => {
   return (
-    <div className="w-full h-full min-h-[450px] mob:min-h-[700px] bg-[#002A2B]">
+    <div className="w-full h-full min-h-[450px] mob:min-h-[700px] bg-[#002A2B] overflow-hidden">
       <div className="relative">
         <Image
           className="absolute bg-contain bg-no-repeat right-0 w-full h-full max-w-[700px] min-h-[500px] z-0"
@@ -16,7 +16,12 @@ const WeGuide = () => {
           width={381}
           height={691}
         />
-        <div className="w-full h-full flex flex-col justify-center max-w-[1090px] mx-auto items-center px-5 min-h-[450px] mob:min-h-[700px]">
+        <div
+          className="w-full h-full flex flex-col justify-center max-w-[1090px] mx-auto items-center px-5 min-h-[450px] mob:min-h-[700px]"
+          data-aos="zoom-out"
+          data-aos-duration="900"
+          data-aos-easing="ease-in-sine"
+        >
           <Text as="h1" className="text-center text-[#FFFFFF] mb-[30px]">
             We guide our clients toward the future of information technology
           </Text>
