@@ -1,5 +1,6 @@
 import React from "react";
 import Image from "next/image";
+import Link from "next/link";
 
 import bg from "@/public/images/home/hero-bg-world.png";
 import bgShadow from "@/public/images/home/bg-shadow.png";
@@ -7,9 +8,15 @@ import Text from "@/components/ui/Text";
 import Button from "@/components/ui/Button";
 const Hero = () => {
   return (
-    <div className=" min-h-[744px] relative flex items-center px-5 justify-center">
+    <div
+      className=" min-h-[744px] relative flex items-center px-5 justify-center
+    "
+    >
       <Image
         className="absolute object-cover h-full w-[70%] mob:w-full right-0 z-0"
+        // data-aos="zoom-in"
+        // data-aos-duration="900"
+        // data-aos-easing="ease-in-sine"
         src={bg}
         alt="bg"
         width={978}
@@ -17,6 +24,9 @@ const Hero = () => {
       />
       <Image
         className="absolute object-cover h-full w-full left-0 z-0"
+        // data-aos="zoom-in"
+        // data-aos-duration="900"
+        // data-aos-easing="ease-in-sine"
         src={bgShadow}
         alt="bg"
         width={1377}
@@ -24,7 +34,12 @@ const Hero = () => {
       />
 
       <div className="relative z-20 w-full max-w-[1270px]">
-        <div className="w-full max-w-[697px]">
+        <div
+          className="w-full max-w-[697px]"
+          data-aos="zoom-in"
+          data-aos-duration="900"
+          data-aos-easing="ease-in-sine"
+        >
           <Text className="text-white text-[18px] font-medium tracking-[1.7px] uppercase">
             we take a holistic approach to problem-solving
           </Text>
@@ -37,7 +52,12 @@ const Hero = () => {
             cutting-edge solutions that empower organizations to optimize their
             operations.
           </Text>
-          <Button className="">LEARN MORE</Button>
+
+          <div className="w-[193px]">
+            <Link href="/about">
+              <Button className="">LEARN MORE</Button>
+            </Link>
+          </div>
         </div>
       </div>
     </div>

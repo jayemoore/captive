@@ -22,10 +22,11 @@ const ReachUs = () => {
       <div
         className="w-full max-w-[1250px] mob:px-5"
         data-aos="fade-up"
-        data-aos-delay="200"
+        data-aos-duration="1200"
+        data-aos-delay="100"
       >
         <div className="flex flex-col flex-wrap justify-center tab:gap-8 items-center">
-          <div className="w-full flex items-center justify-between mob:flex-col mob:gap-10 bg-[#FFFFFF] box-shadow-services py-[24px] px-[39px] mob:px-5 rounded-[12px]">
+          <div className="w-full flex items-center justify-between mob:flex-col mob:gap-10 bg-[#FFFFFF] box-shadow-services py-[24px] px-[39px] mob:px-5 rounded-[12px] mob:pb-12">
             <div>
               <Text className="text-[54px] mob:text-[40px] font-bold leading-[62px] mb-[29px] mob:mb-4">
                 Reach us at

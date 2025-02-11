@@ -6,10 +6,13 @@ import bgShadow from "@/public/images/home/bg-shadow.png";
 import Text from "@/components/ui/Text";
 const ServicesHero = () => {
   return (
-    <div className=" min-h-[438px] relative flex items-center px-5 justify-center">
+    <div className=" min-h-[438px] relative flex items-center px-5 justify-center overflow-hidden">
       <Image
         className="absolute object-cover h-full w-[70%] mob:w-full right-0 z-0"
         src={bg}
+        // data-aos="zoom-in"
+        // data-aos-duration="900"
+        // data-aos-easing="ease-in-sine"
         alt="bg"
         width={978}
         height={744}
@@ -17,13 +20,21 @@ const ServicesHero = () => {
       <Image
         className="absolute object-cover h-full w-full left-0 z-0"
         src={bgShadow}
+        // data-aos="zoom-in"
+        // data-aos-duration="900"
+        // data-aos-easing="ease-in-sine"
         alt="bg"
         width={1377}
         height={744}
       />
 
       <div className="relative z-20 w-full max-w-[1270px]">
-        <div className="w-full max-w-[697px]">
+        <div
+          className="w-full max-w-[697px]"
+          data-aos="zoom-in"
+          data-aos-duration="900"
+          data-aos-easing="ease-in-sine"
+        >
           <Text as="h1" className="mt-[14px] mb-[20px]">
             Our Services
           </Text>
