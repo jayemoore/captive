@@ -1,7 +1,6 @@
 "use client";
 import React, { useEffect, useState } from "react";
 import Link from "next/link";
-
 import { gsap } from "gsap";
 
 import Drawer from "../ui/Drawer";
