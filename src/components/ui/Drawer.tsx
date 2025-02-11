@@ -62,7 +62,7 @@ const Drawer: React.FC<DrawerProps> = ({
       )}
       <div
         className={twMerge(
-          `fixed right-0 top-0 z-[999] h-full   w-[308px]  mob:w-full transform overflow-x-hidden text-white  drawerbg transition-transform duration-300 bg-white ease-in-out ${
+          `fixed right-0 top-0 z-[999] h-full   w-[308px]  mob:w-full transform overflow-x-hidden  transition-transform duration-300 bg-[#002A2B]/90 ease-in-out ${
             isOpen
               ? "transition-transform duration-700 ease-in-out translate-x-0"
               : "transition-transform duration-700 ease-in-out  translate-x-full"
@@ -79,9 +79,9 @@ const Drawer: React.FC<DrawerProps> = ({
           {/* <Text className="text-[#000] text-[20px] font-organetto font-extrabold leading-[60px] uppercase ">
             {drawerTitle ? drawerTitle : "Drawer"}
           </Text> */}
-          <button className="text-black" onClick={onClose}>
+          <button className="text-white" onClick={onClose}>
             {/* <Image src={closeIcon} alt="closeIcon" /> */}
-            <AiOutlineCloseCircle className="text-[40px] text-[#22282F]" />
+            <AiOutlineCloseCircle className="text-[40px] text-white" />
           </button>
         </div>
 

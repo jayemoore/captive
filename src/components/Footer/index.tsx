@@ -23,7 +23,7 @@ const Footer = () => {
             </Text>
           </div>
           {/* Sitemap Section */}
-          <div className="max-w-[104px]">
+          <div className="max-w-[124px]">
             <Text className="font-semibold text-[24px] mb-4">Sitemap</Text>
             <ul className="space-y-1 ">
               <li>
@@ -37,18 +37,13 @@ const Footer = () => {
                 </a>
               </li>
               <li>
-                <a href="/contact-us" className="">
-                  <Text>CONTACT</Text>
-                </a>
-              </li>
-              <li>
                 <a href="/services" className="">
-                  <Text>CAPABILITIES</Text>
+                  <Text>SERVICES</Text>
                 </a>
               </li>
               <li>
-                <a href="" className="">
-                  <Text>STATEMENT</Text>
+                <a href="/contact-us" className="">
+                  <Text>CONTACT US</Text>
                 </a>
               </li>
             </ul>
