@@ -5,7 +5,6 @@ import Leadership from "@/components/About/Leadership";
 import AtCix from "@/components/About/AtCis";
 
 export default function About() {
-
   return (
     <div className="">
       <AboutHero />
