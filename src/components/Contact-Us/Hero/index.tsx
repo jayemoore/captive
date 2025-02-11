@@ -17,7 +17,12 @@ const ContactHero = () => {
       <div className="w-full h-full absolute bg-[#007879B2]/70"></div>
 
       <div className="relative z-20 w-full max-w-[1270px]">
-        <div className="w-full">
+        <div
+          className="w-full"
+          data-aos="zoom-in"
+          data-aos-duration="1200"
+          data-aos-delay="100"
+        >
           <Text as="h1" className="mb-[20px] text-center mt-[-78px] mob:mt-0">
             Contact Us
           </Text>

@@ -30,20 +30,32 @@ const Leadership = () => {
   ];
 
   return (
-    <div className="w-full h-full flex justify-center items-center mt-[145px] mb-[111px] relative px-5 mob:my-[100px]">
+    <div className="w-full h-full flex justify-center items-center mt-[145px] mb-[111px] relative px-5 mob:my-[50px]">
       <div className="w-full max-w-[1221px] flex justify-center items-center">
         <div className="w-full">
-          <Text as="h1" className="text-[#002A2B] mb-[12px] text-center">
-            Our Leadership
-          </Text>
-          <Text className="text-[#22282F] text-[18px] text-center">
-            To empower organizations to leverage the power of technology to
-            drive transformative change for sustainability, scalability,
-            interoperability, and security.
-          </Text>
+          <div
+            data-aos="zoom-out"
+            data-aos-duration="900"
+            data-aos-easing="ease-in-sine"
+          >
+            <Text as="h1" className="text-[#002A2B] mb-[12px] text-center">
+              Our Leadership
+            </Text>
+            <Text className="text-[#22282F] text-[18px] text-center">
+              To empower organizations to leverage the power of technology to
+              drive transformative change for sustainability, scalability,
+              interoperability, and security.
+            </Text>
+          </div>
           <div className="flex w-full items-center flex-wrap justify-center gap-[50px] mt-[59px]">
             {leaders.map((leader, index) => (
-              <div key={index} className="">
+              <div
+                key={index}
+                className=""
+                data-aos="fade-down"
+                data-aos-duration="900"
+                data-aos-easing="ease-in-sine"
+              >
                 <Image
                   src={leader.image}
                   alt="leader"

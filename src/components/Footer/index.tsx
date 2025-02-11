@@ -1,6 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import Text from "../ui/Text";
+import Link from "next/link";
 
 import logo from "@/public/CIS_logo 2.png";
 import twitter from "@/public/icons/twitter.svg";
@@ -26,27 +27,27 @@ const Footer = () => {
             <Text className="font-semibold text-[24px] mb-4">Sitemap</Text>
             <ul className="space-y-1 ">
               <li>
-                <a href="#" className="">
+                <Link href="/" className="">
                   <Text>HOME</Text>
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#" className="">
+                <a href="/about" className="">
                   <Text>ABOUT US</Text>
                 </a>
               </li>
               <li>
-                <a href="#" className="">
+                <a href="/contact-us" className="">
                   <Text>CONTACT</Text>
                 </a>
               </li>
               <li>
-                <a href="#" className="">
+                <a href="/services" className="">
                   <Text>CAPABILITIES</Text>
                 </a>
               </li>
               <li>
-                <a href="#" className="">
+                <a href="" className="">
                   <Text>STATEMENT</Text>
                 </a>
               </li>
@@ -83,13 +84,15 @@ const Footer = () => {
 
         {/* Logo Section */}
         <div className="flex tab:flex-wrap tab:gap-6  w-full items-center justify-between   max-w-[1300px] mx-auto mt-4">
-          <Image
-            src={logo}
-            alt="Captiv Logo"
-            className=""
-            width={229}
-            height={109}
-          />
+          <Link href="/">
+            <Image
+              src={logo}
+              alt="Captiv Logo"
+              className="mob:w-[150px]"
+              width={229}
+              height={109}
+            />
+          </Link>
           <Text className=" text-gray-500 mob:w-full">
             Copyright © 2025 Captiv
           </Text>

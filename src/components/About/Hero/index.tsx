@@ -9,6 +9,9 @@ const AboutHero = () => {
     <div className=" min-h-[434px] relative flex items-center px-5 justify-center">
       <Image
         className="absolute object-cover h-full w-[70%] mob:w-full right-0 z-0"
+        // data-aos="zoom-in"
+        // data-aos-duration="900"
+        // data-aos-easing="ease-in-sine"
         src={bg}
         alt="bg"
         width={978}
@@ -16,6 +19,9 @@ const AboutHero = () => {
       />
       <Image
         className="absolute object-cover h-full w-full left-0 z-0"
+        // data-aos="zoom-in"
+        // data-aos-duration="900"
+        // data-aos-easing="ease-in-sine"
         src={bgShadow}
         alt="bg"
         width={1377}
@@ -23,7 +29,12 @@ const AboutHero = () => {
       />
 
       <div className="relative z-20 w-full max-w-[1270px]">
-        <div className="w-full max-w-[697px]">
+        <div
+          className="w-full max-w-[697px]"
+          data-aos="zoom-in"
+          data-aos-duration="900"
+          data-aos-easing="ease-in-sine"
+        >
           <Text as="h1" className="mt-[14px] mb-[20px]">
             About Us
           </Text>
