@@ -4,6 +4,7 @@ import OurMission from "@/components/Home/OurMission";
 import Working from "@/components/Home/Working";
 import OurServices from "@/components/Home/OurServices";
 import Careers from "@/components/Home/Careers";
+import JoinTeam from "@/components/Home/JoinTeam";
 
 export default function Home() {
   return (
@@ -14,6 +15,7 @@ export default function Home() {
       <Comprehensive />
       <OurServices />
       <Careers />
+      <JoinTeam/>
     </div>
   );
 }

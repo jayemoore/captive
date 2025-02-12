@@ -30,7 +30,7 @@ const Leadership = () => {
   ];
 
   return (
-    <div className="w-full h-full flex justify-center items-center mt-[145px] mb-[111px] relative px-5 mob:my-[50px]">
+    <div className="w-full h-full flex justify-center items-center mt-[55px] mb-[111px] relative px-5 mob:my-[50px]">
       <div className="w-full max-w-[1221px] flex justify-center items-center">
         <div className="w-full">
           <div
