@@ -52,7 +52,7 @@ const expertiseData = [
 
 const Experties = () => {
   return (
-    <div className="px-5 pt-[180] pb-8 mob:py-10">
+    <div className="px-5 pt-[95px] pb-8 mob:py-10">
       <div className="w-full max-w-[1250px] mx-auto flex flex-wrap gap-[48px] mob:gap-[40px] tab:justify-center justify-between "
         data-aos="zoom-out"
         data-aos-duration="900"
