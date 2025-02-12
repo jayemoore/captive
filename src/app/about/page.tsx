@@ -7,6 +7,7 @@ import Experties from "@/components/About/Experties";
 import JoinTeam from "@/components/Home/JoinTeam";
 import Careers from "@/components/Home/Careers";
 
+
 export default function About() {
   return (
     <div className="">
