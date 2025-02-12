@@ -5,7 +5,7 @@ import { gsap } from "gsap";
 
 import Drawer from "../ui/Drawer";
 
-import logo from "@/public/logo.svg";
+import logo from "@/public/CIS_logo 1 (1).png";
 import Image from "next/image";
 
 import togglesvg from "@/public/icons/togglesvg.svg";
@@ -52,7 +52,7 @@ const Navbar = () => {
               alt="Flowbite Logo"
               width={229}
               height={109}
-              className="w-[229px] h-[109px] "
+              className="w-[229px] "
               data-aos="fade-down"
               data-aos-duration="900"
               data-aos-easing="ease-in-sine"
