@@ -4,9 +4,9 @@ import Text from "../ui/Text";
 import Link from "next/link";
 
 import logo from "@/public/CIS_logo 2.png";
-import twitter from "@/public/icons/twitter.svg";
-import insta from "@/public/icons/insta.svg";
-import fb from "@/public/icons/fb.svg";
+// import twitter from "@/public/icons/twitter.svg";
+// import insta from "@/public/icons/insta.svg";
+// import fb from "@/public/icons/fb.svg";
 
 const Footer = () => {
   return (
@@ -91,7 +91,7 @@ const Footer = () => {
           <Text className=" text-gray-500 mob:w-full">
             Copyright © 2025 Captiv
           </Text>
-          <div className="flex items-center gap-8">
+          {/* <div className="flex items-center gap-8">
             <div className="flex gap-6 mr-[15px] tab:mr-0">
               <a href="#" className="text-brand-teal hover:opacity-80">
                 <Image
@@ -121,7 +121,7 @@ const Footer = () => {
                 />
               </a>
             </div>
-          </div>
+          </div> */}
         </div>
       </footer>
     </>
