@@ -2,7 +2,7 @@
 
 import React from "react";
 import Image from "next/image";
-import Link from "next/link";
+// import Link from "next/link";
 
 import Text from "@/components/ui/Text";
 import ContactForm from "./Form";
@@ -11,10 +11,10 @@ import map from "@/public/images/contactus/map.png";
 import location from "@/public/images/contactus/location.svg";
 import call from "@/public/images/contactus/call.svg";
 import mail from "@/public/images/contactus/mail.svg";
-import fb from "@/public/images/contactus/fb.svg";
-import insta from "@/public/images/contactus/insta.svg";
-import twitter from "@/public/images/contactus/twitter.svg";
-import yt from "@/public/images/contactus/yt.svg";
+// import fb from "@/public/images/contactus/fb.svg";
+// import insta from "@/public/images/contactus/insta.svg";
+// import twitter from "@/public/images/contactus/twitter.svg";
+// import yt from "@/public/images/contactus/yt.svg";
 
 const ReachUs = () => {
   return (
@@ -63,7 +63,7 @@ const ReachUs = () => {
                   </Text>
                 </a>
               </div>
-              <div className="flex items-center gap-[20px] flex-wrap mob:justify-center">
+              {/* <div className="flex items-center gap-[20px] flex-wrap mob:justify-center">
                 <Link href="">
                   <Image src={fb} alt="fb" />
                 </Link>
@@ -76,7 +76,7 @@ const ReachUs = () => {
                 <Link href="">
                   <Image src={yt} alt="youtube" />
                 </Link>
-              </div>
+              </div> */}
             </div>
 
             <div className="bg-[#008F91] flex justify-center items-center rounded-[8px] w-full max-w-[558px] min-h-[596px]">
