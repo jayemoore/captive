@@ -9,7 +9,7 @@ interface props {
   description: string;
   image: StaticImageData;
 }
-const AboutReusable: React.FC<props> = ({ description, image }) => {
+const AboutReusable: React.FC<props> = ({ description }) => {
   return (
     <div className="bg-[#002A2B] min-h-[450px] py-[60px] relative px-5 flex items-center justify-center overflow-hidden mt-[86px]">
       <div
