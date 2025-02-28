@@ -11,7 +11,7 @@ interface props {
 
 const ReusableHero: React.FC<props> = ({ name, position }) => {
   return (
-    <div className=" min-h-[744px] relative flex items-center px-5 justify-center bg-gradient-ceo">
+    <div className=" min-h-[402px] relative flex items-center px-5 justify-center bg-gradient-ceo">
       {/* <Image
         className="absolute object-cover h-full w-[70%] mob:w-full right-0 z-0"
         src={bg}
