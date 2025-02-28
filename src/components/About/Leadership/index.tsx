@@ -1,36 +1,46 @@
 import React from "react";
-
+import Link from "next/link";
 import Image from "next/image";
+
 import Text from "@/components/ui/Text";
+import Button from "@/components/ui/Button";
 
 import leader from "@/public/images/about/leader.png";
 
 const Leadership = () => {
   const leaders = [
     {
-      name: "John Doe",
-      title: "position",
+      name: "Mr. Andre Ray",
+      title: "Captiv8 CEO",
+      linkRef: "/captive-ceo",
       image: leader,
+      description:
+        "Jason Moore is a dynamic entrepreneur, seasoned Information Technology Executive, and Certified Program & Project Manager Professional. ",
     },
     {
-      name: "John Doe",
-      title: "position",
+      name: "Mr. Jason Moore",
+      title: "Captiv8 COO",
+      linkRef: "/captive-coo",
       image: leader,
+
+      description:
+        "Andre Ray is a senior executive. He earned a Master of Arts in Urban Affairs & Planning and a Master of Science in Information Technology.",
     },
-    {
-      name: "John Doe",
-      title: "position",
-      image: leader,
-    },
-    {
-      name: "John Doe",
-      title: "position",
-      image: leader,
-    },
+
+    // {
+    //   name: "John Doe",
+    //   title: "position",
+    //   image: leader,
+    // },
+    // {
+    //   name: "John Doe",
+    //   title: "position",
+    //   image: leader,
+    // },
   ];
 
   return (
-    <div className="w-full h-full flex justify-center items-center mt-[55px] mb-[111px] relative px-5 mob:my-[50px]">
+    <div className="w-full h-full flex justify-center items-baseline mt-[55px] mb-[111px] relative px-5 mob:my-[50px]">
       <div className="w-full max-w-[1221px] flex justify-center items-center">
         <div className="w-full">
           <div
@@ -59,16 +69,22 @@ const Leadership = () => {
                 <Image
                   src={leader.image}
                   alt="leader"
-                  className="w-[267px] h-[267px] mb-[20px]"
+                  className="w-[267px] h-[267px] mb-[20px] mx-auto"
                   width={267}
                   height={267}
                 />
                 <Text className="font-bold text-center text-[24px] text-[#22282F] mb-2">
                   {leader.name}
                 </Text>
-                <Text className="text-[16px] text-center text-[#22282F]">
+                <Text className="text-[16px] text-center text-[#22282F] font-medium mb-2">
                   {leader.title}
                 </Text>
+                <Text className="text-[16px] text-center max-w-[500px] text-[#22282F]">
+                  {leader.description}
+                </Text>
+                <Link href={leader.linkRef}>
+                  <Button className="mx-auto mt-7">Read More</Button>
+                </Link>
               </div>
             ))}
           </div>
