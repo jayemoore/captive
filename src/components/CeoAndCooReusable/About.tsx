@@ -19,7 +19,7 @@ const AboutReusable: React.FC<props> = ({ description, image }) => {
         data-aos-easing="ease-in-sine"
       >
         <div className="w-full max-w-[1238px] flex justify-between items-center mob:flex-col-reverse mob:justify-center mob:gap-10">
-          <div className="w-full max-w-[734px]">
+          <div className="w-full">
             <Text className="text-[18px] text-white">
               {description.split("<br />").map((line, index) => (
                 <React.Fragment key={index}>
@@ -30,11 +30,11 @@ const AboutReusable: React.FC<props> = ({ description, image }) => {
             </Text>
           </div>
 
-          <Image
+          {/* <Image
             src={image}
             alt={"image"}
             className="w-full max-w-[400px] relative z-10"
-          />
+          /> */}
         </div>
         <Image
           className="absolute left-[0px] h-full w-auto "
