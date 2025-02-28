@@ -11,7 +11,7 @@ interface props {
 }
 const AboutReusable: React.FC<props> = ({ description }) => {
   return (
-    <div className="bg-[#002A2B] min-h-[450px] py-[60px] relative px-5 flex items-center justify-center overflow-hidden mt-[86px]">
+    <div className="bg-[#002A2B] min-h-[450px] py-[60px] relative px-5 flex items-center justify-center overflow-hidden">
       <div
         className="w-full flex justify-center items-center"
         data-aos="zoom-out"
