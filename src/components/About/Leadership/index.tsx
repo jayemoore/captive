@@ -1,6 +1,6 @@
 import React from "react";
 import Link from "next/link";
-import Image from "next/image";
+// import Image from "next/image";
 
 import Text from "@/components/ui/Text";
 import Button from "@/components/ui/Button";
@@ -10,17 +10,17 @@ import leader from "@/public/images/about/leader.png";
 const Leadership = () => {
   const leaders = [
     {
-      name: "Mr. Andre Ray",
-      title: "Captiv8 CEO",
-      linkRef: "/captive-ceo",
+      name: "Mr. Jason Moore",
+      title: "Captiv8 COO",
+      linkRef: "/captive-coo",
       image: leader,
       description:
         "Jason Moore is a dynamic entrepreneur, seasoned Information Technology Executive, and Certified Program & Project Manager Professional. ",
     },
     {
-      name: "Mr. Jason Moore",
-      title: "Captiv8 COO",
-      linkRef: "/captive-coo",
+      name: "Mr. Andre Ray",
+      title: "Captiv8 CEO",
+      linkRef: "/captive-ceo",
       image: leader,
 
       description:
@@ -57,7 +57,7 @@ const Leadership = () => {
               interoperability, and security.
             </Text>
           </div>
-          <div className="flex w-full items-center flex-wrap justify-center gap-[50px] mt-[59px]">
+          <div className="flex w-full items-center flex-wrap justify-center gap-[50px] mt-[79px]">
             {leaders.map((leader, index) => (
               <div
                 key={index}
@@ -66,13 +66,13 @@ const Leadership = () => {
                 data-aos-duration="900"
                 data-aos-easing="ease-in-sine"
               >
-                <Image
+                {/* <Image
                   src={leader.image}
                   alt="leader"
                   className="w-[267px] h-[267px] mb-[20px] mx-auto"
                   width={267}
                   height={267}
-                />
+                /> */}
                 <Text className="font-bold text-center text-[24px] text-[#22282F] mb-2">
                   {leader.name}
                 </Text>
