@@ -19,3 +19,7 @@
 html {
   scroll-behavior: smooth;
 }
+
+.bg-gradient-ceo {
+  background: linear-gradient(90deg, #00908e 0%, rgba(0, 42, 43, 0.7) 100%);
+}
