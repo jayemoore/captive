@@ -15,7 +15,7 @@ const Leadership = () => {
       linkRef: "/captive-coo",
       image: leader,
       description:
-        "Jason Moore is a dynamic entrepreneur, seasoned Information Technology Executive, and Certified Program & Project Manager Professional. ",
+        "Jason Moore is a dynamic entrepreneur, seasoned Information Technology Executive, and Certified Program & Project Manager Professional with over 25 years of distinguished experience.",
     },
     {
       name: "Mr. Andre Ray",
@@ -24,7 +24,7 @@ const Leadership = () => {
       image: leader,
 
       description:
-        "Andre Ray is a senior executive. He earned a Master of Arts in Urban Affairs & Planning and a Master of Science in Information Technology.",
+        "Andre Ray is a distinguished senior executive and four-year letterman from Virginia Tech, where he earned a Bachelor of Science in Housing, Design Management.",
     },
 
     // {
