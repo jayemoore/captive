@@ -54,7 +54,7 @@ const Hero = () => {
           </Text>
 
           <div className="w-[193px]">
-            <Link href="/about">
+            <Link href="/contact-us">
               <Button className="">LEARN MORE</Button>
             </Link>
           </div>

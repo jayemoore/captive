@@ -51,8 +51,9 @@ const Working = () => {
             Respect and Inclusion
           </Text>
           <Text className="text-center">
-            Experts in designing secure, high-performing, resilient, and
-            efficient infrastructure on AWS.
+            We foster an environment where every voice is heard and valued. Diversity and
+            inclusion are at the core of our culture, ensuring that everyone feels a sense of
+            belonging and purpose.
           </Text>
         </div>
 
