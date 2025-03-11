@@ -32,7 +32,10 @@ const Vision = () => {
                   Our Vision
                 </Text>
                 <Text className="text-white text-[16px] font-medium">
-                  To deliver superior value through innovation and expertise. At
+                  To deliver superior value through innovation and expertise.
+                  <br />
+                  <br />
+                  At
                   CIS, we take a holistic approach to problem-solving,
                   seamlessly integrating advanced technologies while fostering a
                   culture of innovation, adaptability, and continuous

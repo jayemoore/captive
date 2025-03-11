@@ -7,6 +7,7 @@ import Button from "@/components/ui/Button";
 // import bgr from "@/public/images/home/careers.png";
 
 import bgr from "@/public/images/home/jointeambgr.png";
+import Link from "next/link";
 const JoinTeam = () => {
   return (
     <div className="bg-[#007879] min-h-[450px] relative px-5 flex items-center justify-center overflow-hidden">
@@ -24,7 +25,11 @@ const JoinTeam = () => {
           Explore our career opportunities today and see how we can build a
           brighter future together.
         </Text>
+        <div className="mx-auto w-[193px]">
+        <Link href="/contact-us" >
         <Button className="mx-auto">LEARN MORE</Button>
+        </Link>
+        </div>
       </div>
       <Image
         className="absolute right-0 h-full w-auto  "

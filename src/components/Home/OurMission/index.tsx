@@ -43,7 +43,8 @@ const OurMission = () => {
             entire organization.
           </Text>
           <div className="w-[193px]">
-            <Link href="/about#about-vision">
+            {/* <Link href="/about#about-vision"> */}
+            <Link href="/contact-us">
               <Button className="mt-[25px]">LEARN MORE</Button>
             </Link>
           </div>
