@@ -25,7 +25,7 @@ const Working = () => {
           of innovation, success, and growth. That’s why we’ve built a culture
           that values and invests in every individual who joins our team.
         </Text>
-        <Text className="text-center mx-auto mb-10">
+        <Text className="text-center mob:text-left mx-auto mb-10">
           We foster this culture by:
         </Text>
       </div>
