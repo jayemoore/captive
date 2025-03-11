@@ -9,7 +9,7 @@ import Button from "@/components/ui/Button";
 const Hero = () => {
   return (
     <div
-      className=" min-h-[744px] relative flex items-center px-5 justify-center
+      className=" min-h-[684px] relative flex items-center px-5 justify-center
     "
     >
       <Image

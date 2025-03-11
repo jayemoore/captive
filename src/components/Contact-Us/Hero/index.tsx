@@ -5,7 +5,7 @@ import bg from "@/public/images/contactus/herobg.png";
 import Text from "@/components/ui/Text";
 const ContactHero = () => {
   return (
-    <div className=" min-h-[438px] relative flex items-center px-5 justify-center">
+    <div className=" min-h-[380px] relative flex items-center px-5 justify-center">
       <Image
         className="absolute object-cover object-top h-full w-[100%] mob:w-full right-0 z-0"
         src={bg}
