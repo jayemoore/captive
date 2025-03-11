@@ -11,7 +11,7 @@ interface props {
 
 const ReusableHero: React.FC<props> = ({ name, position }) => {
   return (
-    <div className=" min-h-[402px] relative flex items-center px-5 justify-center bg-gradient-ceo">
+    <div className=" min-h-[380px] relative flex items-center px-5 justify-center bg-gradient-ceo">
       {/* <Image
         className="absolute object-cover h-full w-[70%] mob:w-full right-0 z-0"
         src={bg}
@@ -34,7 +34,7 @@ const ReusableHero: React.FC<props> = ({ name, position }) => {
           data-aos-duration="900"
           data-aos-easing="ease-in-sine"
         >
-          <Text as="h1" className="mt-[14px] mb-[20px]">
+          <Text as="h1" className="mt-[14px] mb-[25px]">
             {name}
           </Text>
           <Text className="text-[#D9D9D9] text-[30px] mb-[32px]">

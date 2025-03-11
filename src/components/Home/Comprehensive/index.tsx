@@ -12,7 +12,7 @@ const Comprehensive = () => {
   return (
     <div className="relative mt-36 mob:mt-12 min-h-[708px] bg-[#018f91] overflow-hidden">
       <Image
-        className=" object-cover w-full h-full z-0 max-h-[708px]"
+        className=" object-cover w-full h-full z-0 max-h-[508px] mb-[-140px]"
         data-aos="fade-up"
         data-aos-duration="900"
         data-aos-easing="ease-in-sine"
@@ -28,7 +28,7 @@ const Comprehensive = () => {
         width={1440}
         height={1151}
       />
-      <div className="w-full max-w-[1340px] flex tab:flex-wrap gap-[20px] items-center  mx-auto relative z-20 px-5  py-32 mob:pt-10 mob:pb-24">
+      <div className="w-full max-w-[1340px] flex tab:flex-wrap gap-[20px] items-center  mx-auto relative z-20 px-5  pb-32 mob:pt-10 mob:pb-24">
         <div className="flex-col w-full max-w-[578px]">
           <div
             data-aos="fade-right"

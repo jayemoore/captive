@@ -5,7 +5,7 @@ import Text from "@/components/ui/Text";
 const Mission = () => {
   return (
     <div
-      className="w-full h-full flex justify-center items-center mt-[75px] mb-[93px] mob:mt-[50px] mob:mb-10 relative px-5"
+      className="w-full h-full flex justify-center items-center mt-[75px] mb-[75px] mob:mt-[50px] mob:mb-10 relative px-5"
       id="about-vision"
     >
       <div className="w-full h-full max-w-[967px] flex justify-center items-center">
