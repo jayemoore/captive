@@ -1,16 +1,16 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
-import "./globals.css";
+import AosProvider from "./providers/Aos";
 import Footer from "@/components/Footer";
 import Navbar from "@/components/Navbar";
-import AosProvider from "./providers/Aos";
+import "./globals.css";
 
 const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
 
 export const metadata: Metadata = {
   title: "Captive",
   description:
-    "Captiv8 Integrated Services, LLC (CIS) is a certified Small Business by the Small Business Administration (SBA) dedicated to delivering cutting-edge solutions that empower organizations to optimize their operations.",
+    "Captiv8 Integrated Services provides top-tier solutions for businesses.",
 };
 
 export default function RootLayout({
@@ -20,11 +20,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={` ${inter.variable}   `}>
+      <body className={` ${inter.variable} `}>
         <AosProvider>
-          <Navbar />
+          {/* <Navbar /> */}
           {children}
-          <Footer />
+          {/* <Footer/> */}
         </AosProvider>
       </body>
     </html>
