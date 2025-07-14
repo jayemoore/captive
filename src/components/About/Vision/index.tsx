@@ -1,5 +1,7 @@
+/** @format */
+
 import React from "react";
-import Image from "next/image";
+// import Image from "next/image";
 
 import Text from "@/components/ui/Text";
 
@@ -7,36 +9,34 @@ import bg from "@/public/images/about/vision.png";
 
 const Vision = () => {
   return (
-    <div className="w-full h-full flex justify-center items-center px-5">
-      <div className="w-full h-full max-w-[1250px]">
-        <div className="relative flex justify-center items-center mob:flex-col mob:gap-5">
-          <Image
-            className="absolute mob:relative h-full mob:min-h-full bg-center w-[1350px] mob:w-full z-0 mob:rounded-[12px]"
-            data-aos="fade-down"
-            data-aos-duration="900"
-            data-aos-easing="ease-in-sine"
-            src={bg}
-            alt="bg"
+    <div className='w-full h-full flex justify-center items-center px-5'>
+      <div className='w-full h-full max-w-[1250px]'>
+        <div className='relative flex justify-center items-center mob:flex-col mob:gap-5'>
+          <img
+            className='absolute mob:relative h-full mob:min-h-full bg-center w-[1350px] mob:w-full z-0 mob:rounded-[12px]'
+            data-aos='fade-down'
+            data-aos-duration='900'
+            data-aos-easing='ease-in-sine'
+            src={bg.src}
+            alt='bg'
             width={1350}
             height={861}
           />
-          <div className="w-full pl-[45px] mob:px-0 my-20 tab:my-0">
+          <div className='w-full pl-[45px] mob:px-0 my-20 tab:my-0'>
             <div
-              className="relative flex justify-center rounded-[12px] items-center z-10  max-w-[644px] bg-[#008F91E5]/90"
-              data-aos="fade-up"
-              data-aos-duration="900"
-              data-aos-easing="ease-in-sine"
-            >
-              <div className="w-full h-full px-[45px] py-[30px] mob:px-5">
-                <Text as="h1" className=" mb-[24px]">
+              className='relative flex justify-center rounded-[12px] items-center z-10  max-w-[644px] bg-[#008F91E5]/90'
+              data-aos='fade-up'
+              data-aos-duration='900'
+              data-aos-easing='ease-in-sine'>
+              <div className='w-full h-full px-[45px] py-[30px] mob:px-5'>
+                <Text as='h1' className=' mb-[24px]'>
                   Our Vision
                 </Text>
-                <Text className="text-white text-[16px] font-medium">
+                <Text className='text-white text-[16px] font-medium'>
                   To deliver superior value through innovation and expertise.
                   <br />
                   <br />
-                  At
-                  CIS, we take a holistic approach to problem-solving,
+                  At CIS, we take a holistic approach to problem-solving,
                   seamlessly integrating advanced technologies while fostering a
                   culture of innovation, adaptability, and continuous
                   improvement across the entire organization.
