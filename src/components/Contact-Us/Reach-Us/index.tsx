@@ -39,7 +39,7 @@ const ReachUs = () => {
               />
 
               <div className='flex items-center gap-[16px]'>
-                <img src={location} alt='Location' />
+                <img src={location.src} alt='Location' />
                 <Text className='text-[#1B1D21]'>
                   12410 Milestone Center Drive, Suite 600, German Town, MD
                 </Text>
@@ -48,7 +48,7 @@ const ReachUs = () => {
                 <a
                   href='tel:4045930333'
                   className='w-fit flex items-center gap-[16px]'>
-                  <img src={call} alt='Call' />
+                  <img src={call.src} alt='Call' />
                   <Text className='text-[#1B1D21]'>(404) 593-0333</Text>
                 </a>
               </div>
@@ -56,7 +56,7 @@ const ReachUs = () => {
                 <a
                   href='mailto:info@captive8integratedservices'
                   className='w-fit flex items-center gap-[16px]'>
-                  <img src={mail} alt='Mail' />
+                  <img src={mail.src} alt='Mail' />
                   <Text className='text-[#1B1D21]'>
                     info@captiv8integratedeservices.com
                   </Text>
