@@ -11,7 +11,7 @@ export async function POST(request: NextRequest) {
       secure: false,
       auth: {
         user: "developer@innovativemojo.com",
-        pass: "uqcy avif eqfa gcbd",
+        pass: "kuuw czei mcmg fvmm",
       },
     });
     // ${process.env.Email_Captive}

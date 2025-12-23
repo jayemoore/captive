@@ -13,7 +13,6 @@ export default function Home() {
     <div className="">
       {/* <GoBacktoHost /> */}
       <Hero />
-
       <OurMission />
       <Working />
       <Comprehensive />
